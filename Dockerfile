@@ -19,7 +19,7 @@ RUN useradd -u 911 -U -d /config -s /bin/false abc && \
 ENV APTLIST="qbittorrent-nox"
 
 #Volumes and Ports
-PORT=${PORT:-8080}
+ENV PORT=${PORT:-8080}
 EXPOSE $PORT
 
 #Adding Custom files
