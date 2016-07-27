@@ -24,7 +24,7 @@ EXPOSE $PORT
 
 #Adding Custom files
 COPY defaults/qBittorrent.conf /config/qBittorrent.conf
-RUN mkdir -p $HOME/.config/qBittorrent \ &&
+RUN mkdir -p $HOME/.config/qBittorrent && \
     ln -s /config/qBittorrent.conf $HOME/.config/qBittorrent/qBittorrent.conf
 
 ################################################################
