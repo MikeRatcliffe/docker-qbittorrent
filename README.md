@@ -13,7 +13,7 @@ docker create \
     -e PORT=8080 \
     -p 8080:8080 \
     --restart always \
-    mikeratcliffe/headphones
+    mikeratcliffe/qbittorrent
 ```
 
 **Parameters**
