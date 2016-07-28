@@ -8,7 +8,7 @@ RUN useradd -u 911 -U -d /config -s /bin/false abc && \
     apt-get update && \
     apt-get install -y git python3-bs4 && \
     git clone https://github.com/jblakeman/apt-select /app/aptselect && \
-    python3 /app/aptselect/apt-select/setup.py install && \
+    python3 /app/aptselect/setup.py install && \
     apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
