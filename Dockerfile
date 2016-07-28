@@ -6,7 +6,7 @@ RUN useradd -u 911 -U -d /config -s /bin/false abc && \
     usermod -G users abc && \
     mkdir -p /config /defaults && \
     apt-get update && \
-    apt-get install -y git python3-bs4 && \
+    apt-get install -y git python3-bs4 python-setuptools python3-setuptools&& \
     git clone https://github.com/jblakeman/apt-select /app/aptselect && \
     python3 /app/aptselect/setup.py install && \
     apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
