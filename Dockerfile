@@ -4,7 +4,7 @@ MAINTAINER Mike Ratcliffe <mratcliffe@mozilla.com>
 ENV DEBIAN_FRONTEND="noninteractive" HOME="/root" TERM="xterm"
 RUN useradd -u 911 -U -d /config -s /bin/false abc && \
     usermod -G users abc && \
-    mkdir -p /config /defaults && \
+    mkdir -p /app /config /defaults && \
     apt-get update && \
     apt-get install -y python3-bs4 && \
     apt-get upgrade -y -o Dpkg::Options::="--force-confold" && \
