@@ -22,11 +22,6 @@ ENV APTLIST="qbittorrent-nox"
 ENV PORT=${PORT:-8080}
 EXPOSE $PORT
 
-#Adding Custom files
-COPY defaults/qBittorrent.conf /config/qBittorrent.conf
-RUN mkdir -p $HOME/.config/qBittorrent && \
-    ln -s /config/qBittorrent.conf $HOME/.config/qBittorrent/qBittorrent.conf
-
 ################################################################
 # DO NOT EDIT BELOW THIS LINE
 
@@ -34,6 +29,7 @@ VOLUME ["/config", "/downloads", "/defaults"]
 
 ADD init/ /etc/my_init.d/
 ADD services/ /etc/service/
+ADD defaults/ /etc/defaults/
 RUN chmod -v +x /etc/service/*/run /etc/my_init.d/*.sh && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /var/tmp/*
 
