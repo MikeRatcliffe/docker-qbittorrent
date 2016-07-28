@@ -8,7 +8,7 @@
 # run apt-select script to find fastest up to date mirror
 cd /defaults || exit
 echo "finding fastest mirror"
-python3 /app/aptselect/apt-select.py -t 3 -m up-to-date
+apt-select -t 3 -m up-to-date
 
 # check for and install any updates
 echo "We are now refreshing packages from apt repositories, this *may* take a while"

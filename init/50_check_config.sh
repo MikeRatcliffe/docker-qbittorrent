@@ -1,9 +1,9 @@
 #!/bin/bash
 chown -R abc:abc /app
 
-if [ ! -f /config/qBittorrent.conf ]; then
-  echo "No config found, copys default now"
-  cp -v /defaults/qBittorrent.conf /config/qBittorrent.conf
+if [ ! -f /config/.config/qBittorrent/qBittorrent.conf ]; then
+  echo "No config found, copy default now"
+  cp -v /defaults/qBittorrent.conf /config/.config/qBittorrent/qBittorrent.conf
 
   echo "Checking value of home:"
   echo "Home: $HOME"
@@ -17,5 +17,3 @@ if [ ! -f /config/qBittorrent.conf ]; then
   chmod -v u+rw /config/qBittorrent.conf
   chown -Rv abc:abc /downloads
 fi
-
-# /config/.config/qBittorrent/qBittorrent.conf
