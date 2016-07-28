@@ -3,7 +3,7 @@ chown -R abc:abc /app
 
 if [ ! -f /config/qBittorrent.conf ]; then
   echo "No config found, copys default now"
-  cp -v defaults/qBittorrent.conf /config/qBittorrent.conf
+  cp -v /defaults/qBittorrent.conf /config/qBittorrent.conf
 
   echo "Symlinking the config file"
   mkdir -p $HOME/.config/qBittorrent
