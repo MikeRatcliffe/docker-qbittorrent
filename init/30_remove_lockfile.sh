@@ -1,4 +1,4 @@
 #!/bin/bash
 
 
-if [ -f /downloads/qbittorrent.lock ]; then rm /downloads/qbittorrent.lock; fi
+if [ -f /downloads/qbittorrent-nox.lock ]; then rm /downloads/qbittorrent-nox.lock; fi
