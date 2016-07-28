@@ -11,6 +11,6 @@ if [ ! -f /config/qBittorrent.conf ]; then
 
   echo "Setting permissions"
   chown abc:abc /config/qBittorrent.conf
-  chmod u+rw /config/nzbget.conf
+  chmod u+rw /config/qBittorrent.conf
   chown -R abc:abc /downloads
 fi
