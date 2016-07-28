@@ -2,7 +2,7 @@
 chown -R abc:abc /app
 
 if [ ! -f /config/.config/qBittorrent/qBittorrent.conf ]; then
-  echo "No config found, copy default now"
+  echo "No config file found, copy default now"
   mkdir -p /config/.config/qBittorrent/
   cp -v /defaults/qBittorrent.conf /config/.config/qBittorrent/qBittorrent.conf
 
