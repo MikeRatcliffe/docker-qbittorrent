@@ -1,5 +1,7 @@
 # qBittorrent
 
+[![](https://images.microbadger.com/badges/image/mikeratcliffe/docker_qbittorrent.svg)](https://microbadger.com/images/mikeratcliffe/docker_qbittorrent "Get your own image badge on microbadger.com")
+
 qBittorrent is a well known torrent downloader.
 
 ## Usage
